@@ -39,7 +39,8 @@ def is_url_valid(new_url):
     if not _is_free_of_control_characters(new_url):
         print(f"Ignoring binary data: {new_url}")
         return False
-    if not validators.url(new_url):
+    base = new_url.split('?', 1)[0]
+    if not validators.url(base):
         print(f"Ignoring invalid URL: {new_url}")
         return False
     return True
