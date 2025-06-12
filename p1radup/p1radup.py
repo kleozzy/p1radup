@@ -23,7 +23,7 @@ def print_banner():
     ██       ██ ██   ██ ██   ██ ██   ██ ██    ██ ██
     ██       ██ ██   ██ ██   ██ ██████   ██████  ██
 
-    with <3 by @iambouali and aaznar
+    with <3 by kleozzy
     """
 
     print(colored(banner, 'green'))
